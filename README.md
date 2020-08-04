@@ -4,7 +4,7 @@
 该论文共42页，本文档概括梳理了其具体内容，并对提到的模型和数据集进行了整理（附开源地址）；
 
 
-## 1. 文本分类任务（Text Classification Tasks)
+## 1 文本分类任务（Text Classification Tasks)
 文本分类在应用中包含多个不同的任务：
 
 1）**情感分析（Sentiment Analysis)**
@@ -40,5 +40,33 @@ QA系统分为抽取（Extractive)和生成(Generative)；抽取式问答可以�
 #### Doc2vec
 
 
+### 2.2 RNN-based 模型
+
+在RNN的各类变种中，LSTM为最广泛被使用的模型，可以一定程度上缓解梯度消失或爆炸的问题，对捕获长信息更有效；在文本分类中，为了捕获更丰富的语义信息，提出了一些基于此改进的模型：
+
+#### Tree LSTM Model
+
+#### TopicRNN
 
 
+
+### 2.3 CNN-based 模型
+RNN在时间序列上更为有效，在如词性标注、QA等需要长范围语义理解的问题中效果较好；CNN在空间上更为有效，发现局部以及与位置无关的信息。
+
+
+
+## 3 文本分类数据集
+
+### 3.1 情感分类
+
+#### [yelp](https://www.yelp.com/dataset)：包含两个分类任务，一个细粒度情感分类，一个预测积极或消极；
+
+#### [IMDb](): 二分类情感问题
+
+### 3.2 新闻分类
+
+### 3.3 主题分类
+
+#### DBpedia
+
+#### [Ohsumed](http://davis.wpi.edu/xmdv/datasets/ohsumed.html):是MEDLINE数据库的一个子集；包含7400个文档，每个文档是一段医学摘要，包含一个或者多个从23个心血管疾病类别标签。
